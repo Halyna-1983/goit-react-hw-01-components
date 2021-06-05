@@ -1,6 +1,8 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
-// import style from '../components/';
+import PropTypes from 'prop-types';
+//import defaultImg from '../../'
+
+ 
 
 const FriendsListItem = friends => {
     const{avatar, name, isOnline} = friends
@@ -11,6 +13,16 @@ const FriendsListItem = friends => {
         <p className="name">{name}</p>
     </>
     )
+}
+
+// FriendListItem.defaultProps = {
+//     avatar: defaultImg,
+//   };
+
+FriendsListItem.prototype = {
+isOnline: PropTypes.bool.isRequired,
+name: PropTypes.string.isRequired,
+avatar: PropTypes.string,
 }
 
 export default FriendsListItem;
