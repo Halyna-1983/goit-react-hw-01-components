@@ -1,7 +1,10 @@
 import user from './data/user.json';
 import Profile from './components/Profile';
+import statisticalData from './data/statistical-data.json';
 import Statistics from './components/Statistics';
-import statisticalData from './data/statistical-data.json'
+import friendslist from './data/friends.json';
+import FriendList from './components/FriendList';
+//import FriendsListItem from './components/FriendListItem';
 
 
 function App() {
@@ -25,6 +28,10 @@ function App() {
      stats={statisticalData} />
      {/* <Statistics stats={Statistics.percentage} />; */}
 
+     <h1>Завдання 3 - FriendList</h1>
+
+     <FriendList 
+     friends={friendslist} />,
     </div>
   )
 }
