@@ -28,14 +28,13 @@ function App() {
      <Statistics 
      title="Upload stats" 
      stats={statisticalData} />
-     {/* <Statistics stats={Statistics.percentage} />; */}
-
+     
      <h1>Завдання 3 - FriendList</h1>
 
      <FriendList 
      friends={friendslist} />,
 
-    <h1>Завдання 3 - FriendList</h1>
+    <h1>Завдання 4 - Transactions</h1>
 
     <TransactionHistory 
     items={transactions} />;
