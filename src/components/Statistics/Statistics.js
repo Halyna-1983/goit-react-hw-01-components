@@ -14,17 +14,17 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-// import stats from '../data/statistical-data.json';
+import './Statistics.css';
 
 const Statistics = ({title, stats}) => {
-  return <section className = "statistics">
+  return <section className= "statistics">
 
-    {title && <h2 className="title">{title}</h2>}
+    {title && <h2 className="statistics__title">{title}</h2>}
   
-    <ul>
+    <ul className="statistics__list">
       {stats.map(item => {
         const{id, label, percentage} = item
-        return <li className="item" key={id} >
+        return <li className=".statistics__item" key={id} >
         <span className="label">{label}</span>
         <span className="percentage">{percentage}%</span>
       </li>

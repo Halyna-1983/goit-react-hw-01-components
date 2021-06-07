@@ -22,10 +22,11 @@
 import React from 'react';
 //import PropTypes from 'prop-types';
 import FriendsListItem from './FriendListItem';
+import './FriendListItem.css';
 
 const FriendList = ({friends}) => (
 
-<ul className="friend-list">
+<ul className="friendList">
 
 {friends.map(friend => (
     <li className="item" key={friend.id}>

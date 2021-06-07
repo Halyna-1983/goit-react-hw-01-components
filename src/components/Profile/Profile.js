@@ -14,8 +14,10 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import './Profile.css';
 
-const Profile = ({avatar, name, tag, location, followers, views, likes}) => (
+
+const Profile = ({avatar, name, tag, location, stats: {followers, views, likes}}) => (
         <div className="profile">
         <div className="description">
           <img
@@ -29,15 +31,15 @@ const Profile = ({avatar, name, tag, location, followers, views, likes}) => (
         </div>
       
         <ul className="stats">
-          <li>
+          <li className="statsItem">
             <span className="label">Followers</span>
             <span className="quantity">{followers}</span>
           </li>
-          <li>
+          <li className="statsItem">
             <span className="label">Views</span>
             <span className="quantity">{views}</span>
           </li>
-          <li>
+          <li className="statsItem">
             <span className="label">Likes</span>
             <span className="quantity">{likes}</span>
           </li>

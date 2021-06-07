@@ -17,7 +17,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import Transaction from './Transac/Transaction';
+import Transaction from './Transaction';
 
 
 const TransactionHistory = ({items}) => (
